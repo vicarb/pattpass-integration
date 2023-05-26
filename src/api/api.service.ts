@@ -11,7 +11,7 @@ export class ApiService {
     const serviceId = Math.floor(Math.random() * (9999999 - 1000000) + 1000000);
     const requestPayload = {
       ...data,
-      serviceId, // generate a new UUID for serviceId
+      serviceId,
       url: "http://misitio.cl/finalizar_suscripcion",
       finalUrl: "http://misitio.cl/voucher",
       commerceCode: "28299257",
